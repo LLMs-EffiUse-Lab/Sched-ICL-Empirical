@@ -158,6 +158,6 @@ def individual_classifier_(data_dir, model_list, test_sys, test_size, itr):
     df_cost = get_cost_(test_data, model_list)
     df_true_accuracy = get_accuracy_(test_data, model_list)
 
-    label_cost = get_cost_(train_data, model_list)
+    # label_cost = get_cost_(train_data, model_list)
 
-    return df_pre_accuracy, df_true_accuracy, df_cost, evl_accuracy, label_cost
+    return df_pre_accuracy, df_true_accuracy, df_cost, evl_accuracy #, label_cost
