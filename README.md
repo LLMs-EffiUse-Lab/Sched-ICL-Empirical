@@ -13,9 +13,23 @@ This study aims to investigate the potential of combining schedule optimization 
 
  - RQ3: How generalizable are our findings across different LLMs and datasets?
 
-### 3. Additional Results
 
-#### 3.1 Training Data Size Impact on Prediction Accuracy and Label Collection Cost
+### 3. Benchmark Datasets
+
+#### 3.1 Log Parsing
+
+ - Original log data: LogPai benchmark
+ - Interacted with LLM: GPT-3.5 (from OpenAI)
+ - Prompt templates: Simple, Standard, Enhanced, 1-shot, 2-shot, and 4-shot
+
+#### 3.1 Text classification
+ - Original text data: Overruling benchmark
+ - Interacted with LLM: J2-Mid (from AI21)
+ - Prompt templates: Simple, Standard, Enhanced, 1-shot, 2-shot, and 4-shot
+
+### 4. Additional Results
+
+#### 4.1 Training Data Size Impact on Prediction Accuracy and Label Collection Cost
 <p align="center"><img src="figs/training_size.png" width="800"><br>Impact of Training Data Size on Prediction Accuracy and Label Collection Cost</p>
 
  - Prediction accuracy generally increases with larger label sizes for both SCE and MLBP across all systems
@@ -24,7 +38,7 @@ This study aims to investigate the potential of combining schedule optimization 
 
 Considering the accuracy improvment and label collection cost, we use 30% of the training data for prediction accuracy evaluation in this study.
 
-#### 3.2 Completed Comparisons (for Table 3)
+#### 4.2 Completed Comparisons
 
 In our study, we present the average performance across all instances based on several metrics: the highest accuracy achieved, the inverted generational distance (IGD), the delta ($\Delta$) metric, and the count of non-dominated solutions ($M_d$) obtained by combining all algorithms with three different prediction methods.
 
@@ -45,7 +59,7 @@ However, it's important to examine the performance on individual instances, as t
 
 <p align="center"><img src="figs/moeadgen.png" width="800"><br>Comparisons of MOEA/D-GEN with Different Fitness Function in terms of Accuracy, IGD, $\Delta$, and $M_n$</p>
 
-### 4 Implementation
+### 5 Implementation
 $ python exp.py $
 
 We used the standard version of NSGA-II and R-NSGA-II implemented from Pymoo library,  MOACO, MOPSO, MOEA/D and MOEA/D-GEN from Pygmo library, SPEA2 from jMetalPy library. 
