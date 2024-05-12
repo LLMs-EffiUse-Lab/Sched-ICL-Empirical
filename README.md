@@ -40,7 +40,7 @@ Considering the accuracy improvment and label collection cost, we use 30% of the
 
 #### 4.2 Completed Comparisons
 
-In our study, we present the average performance across all instances based on several metrics: the highest accuracy achieved, the inverted generational distance (IGD), the delta ($\Delta$) metric, and the count of non-dominated solutions ($M_d$) obtained by combining all algorithms with three different prediction methods.
+In our study, we present the average performance across all instances based on several metrics: the highest accuracy achieved, the inverted generational distance (IGD), the delta ($\Delta$) metric, and the count of non-dominated solutions ($M_n$) obtained by combining all algorithms with three different prediction methods.
 
 However, it's important to examine the performance on individual instances, as the characteristics of the data may influence the outcomes. Therefore, we provide comparisons for each algorithm using different fitness functions on 16 separate instances. These comparisons include the accuracy, IGD, delta ($\Delta$), and the number of non-dominated solutions ($M_n$) specific to each instance.
 
